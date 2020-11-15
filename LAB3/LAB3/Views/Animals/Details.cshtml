@@ -1,0 +1,36 @@
+﻿@model LAB3.Models.Animals
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Animals</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AN_NAME)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AN_NAME)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AN_HEIGHT)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AN_HEIGHT)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AN_WEIGHT)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AN_WEIGHT)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.AN_ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

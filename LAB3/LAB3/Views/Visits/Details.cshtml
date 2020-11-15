@@ -1,0 +1,30 @@
+﻿@model LAB3.Models.Visits
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Visits</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VS_DATE)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VS_DATE)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VS_DESCRIPTION)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VS_DESCRIPTION)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.VS_ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
